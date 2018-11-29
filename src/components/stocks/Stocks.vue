@@ -2,7 +2,8 @@
   <div>
     <app-stock 
       v-for="stock in stocks"
-      :key="stock.id">
+      :key="stock.id"
+      :stock="stock">
     </app-stock>
   </div>
 </template>
@@ -15,9 +16,9 @@ export default {
     return {
       stocks: [
         { id: 1, name: "BMW", price: 10 },
-        { id: 1, name: "Google", price: 132 },
-        { id: 1, name: "Tinder", price: 211 },
-        { id: 1, name: "Yahoo", price: 41 }
+        { id: 2, name: "Google", price: 132 },
+        { id: 3, name: "Tinder", price: 211 },
+        { id: 4, name: "Yahoo", price: 41 }
       ]
     }
   },
